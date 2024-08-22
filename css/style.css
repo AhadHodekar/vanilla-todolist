@@ -18,10 +18,10 @@ body {
    height: 100%;
    display: flex;
    align-items: center;
-   justify-content: center;
+   /* justify-content: center; */
    flex-direction: column;
    gap: 20px;
-   padding: 50px;
+   padding: 50px 50px 50px;
 }
 .main h1 {
    margin-bottom: 20px;
@@ -79,12 +79,24 @@ body {
    padding: 10px;
    border: 2px solid lavender;
    display: flex;
-   align-items: center;
+   align-items: start;
    justify-content: space-between;
    font-size: 1.2rem;
    border-radius: 10px;
 }
-
+.todo p {
+   width: 90%;
+   /* background: pink; */
+   overflow: hidden;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+}
+.todo:hover p {
+   height: auto;
+   padding: 0 0 10px 0;
+   text-overflow: none;
+   white-space: unset;
+}
 .task-status {
    width: 40px;
    height: 40px;
